@@ -20,9 +20,6 @@
                 width: 100%;
                 height: 300vh;
             }
-            section, footer{
-                padding: 10px;
-            }
             header{
                 background-image: url(images/nebula.png);
                 background-repeat: no-repeat;
@@ -54,16 +51,18 @@
                 text-decoration: underline;
                 color: aliceblue;
             }
-            #about, #me, #you{
+            #about, #me, #you{ /* bookmark links */
                 width: 100%;
                 height: 100vh;
+            }
+            #div-intro, #div-contents, #div-outro{
+                margin-left: 15px;
+                margin-right: 15px;
             }
             #div-intro{
                 position: absolute;
                 bottom: 50px;
                 font-size: 40px;
-                margin-left: 20px;
-                margin-right: 10px;
             }
         </style>
     </head>
@@ -90,20 +89,26 @@
         </header>
         <main>
             <hr>
-            <section id="about">
-                <h1>Section 1</h1>
-            </section>
-            <hr>
-            <section id="me">
-                <h1>Section 2</h1> 
-            </section>
-            <hr>
-            <section id="you">
-                <h1>Section 3</h1>
-            </section>
+            <div id="div-contents">
+                <section id="about">
+                    <h1>Section 1</h1>
+                </section>
+                <hr>
+                <section id="me">
+                    <h1>Section 2</h1> 
+                </section>
+                <hr>
+                <section id="you">
+                    <h1>Section 3</h1>
+                </section>
+            </div>
         </main>
-        <footer>
-            <h1>Footer</h1>
+        <footer>  
+            <hr>
+            <div id="div-outro">     
+                <h1>Footer</h1>
+            </div>
+            
         </footer>
     </body>
 </html>
